@@ -67,6 +67,81 @@ yarn -v
 ## Este comando precisa retornar com a versão instalada do Yarn
 ```
 
+## 🚀 Configurando o Babel
+
+Primeiramente você vai criar um projeto, dentro da pasta **execute o seguinte comando:**
+
+``` bash
+yarn init -y
+
+## O "-y" vai responder sim automaticamente para todas perguntas da instalação.
+```
+
+Após rodar este comando, será criado um arquivo chamado **package.json** na raíz de nosso projeto. Ele vai armazenar as informações de depêndencias da nossa aplicação.
+
+O próximo passo é instalar as primeiras dependências do nosso projeto, **execute o seguinte comando usando o yarn:**
+
+``` bash
+yarn add @babel/cli @babel/preset-env @babel/core
+
+## Assim serão instaladas as dependências, fique tranquilo, isso pode demorar um pouco.
+```
+
+Quando as dependências terminarem de ser instaladas serão criados dois arquivos o **yarn.lock** que é apenas uma forma de cache do yarn e uma pasta **node_modules**, está pasta irá armazenar todas as dependências do nosso projeto, essas dependências também poder ter dependências e assim por diante. Você não precisa se preocupar com esses dois arquivos.
+
+> Se você vai usar o Git como controle de versão, essa é uma bora hora para criar o arquivo **.gitignore** e adicionar a pasta **node_modules.**
+
+### Começando a configuração do Babel 
+
+Primeiro, crie um arquivo na raíz do projeto com o nome de **.babelrc**
+
+Dentro deste arquivo, **coloque o seguinte código:**
+
+``` js
+{
+    "presets": ["@babel/preset-env"]
+}
+```
+
+O preset-env basicamente vai entender qual ambiente estamos trabalhando, no caso no navegador e vai converter o código de forma que os navegadores entendam. 
+
+Agora vamos criar dois arquivos, **index.html** e **main.js**
+
+No arquivo **main.js**, vamos adicionar o seguinte código: 
+
+``` js
+class Test {
+    method() {
+
+    }
+}
+```
+
+E no **package.json** vamos adicionar uma nova propriedade chamada ``"scripts"`` e vamos definir o nosso primeiro script. Esses mesmos são formas de executar comandos do terminal que façam mais de uma coisa.
+
+**Como vai ficar a nova propriedade:**
+
+``` json
+"scripts": {
+    "dev": "babel ./main.js -o ./bundle.js -w"
+}   
+```
+
+O script ``"dev"`` vai executar o Babel pegando o arquivo **main.js** e enviando convertido para outro arquivo chamando **bundle.js**
+
+O parâmetro ``-w`` vai ficar monitorando nosso arquivo **main.js** e a cada mudança ele vai automaticamente converter e enviar para o **bundle.js**
+
+Depois de salvarmos o arquivo, **vamos executar o seguinte comando no terminal:**
+
+``` bash
+yarn dev
+```
+
+### E finalmente, você irá reparar o novo arquivo **bundle.js**, seu conteúdo será o código do **main.js** convertido para versões mais antigas do JavaScript.
+
+
+
+
 
 
 
