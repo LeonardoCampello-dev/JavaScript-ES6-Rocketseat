@@ -1,7 +1,6 @@
 <h1 align="center">
     <img 
         src="https://scontent.fpoa1-1.fna.fbcdn.net/v/t1.0-9/117305017_723271011552709_7969369902008808369_o.png?_nc_cat=108&ccb=2&_nc_sid=e3f864&_nc_ohc=xuBOzPhI1x4AX_QSS-K&_nc_ht=scontent.fpoa1-1.fna&oh=cb9bc809b1fd6b7f420f6ccf8e99046e&oe=5FE54E91"
-        alt="Boost your self"
         width="800"
     >
 </h1>
@@ -10,7 +9,6 @@
     <a href="https://app.rocketseat.com.br/starter">Starter</a>
     <img 
         src="https://xesque.rocketseat.dev/platform/1566444881250.png"
-        alt="JavaScript ES6"
         width="40"
     >
 </h1>
@@ -97,11 +95,12 @@ Primeiro, crie um arquivo na raíz do projeto com o nome de **.babelrc**
 
 Dentro deste arquivo, **coloque o seguinte código:**
 
-``` js
-{
-    "presets": ["@babel/preset-env"]
-}
-```
+<h2 align="center">
+    <img 
+        src="./.github/babel-config.png" 
+        width="500"
+    >
+</h2>
 
 O preset-env basicamente vai entender qual ambiente estamos trabalhando, no caso no navegador e vai converter o código de forma que os navegadores entendam. 
 
@@ -109,23 +108,24 @@ Agora vamos criar dois arquivos, **index.html** e **main.js**
 
 No arquivo **main.js**, vamos adicionar o seguinte código: 
 
-``` js
-class Test {
-    method() {
+<h2 align="center">
+    <img 
+        src="./.github/first-bundle.png" 
+        width="500"
+    >
+</h2>
 
-    }
-}
-```
 
 E no **package.json** vamos adicionar uma nova propriedade chamada ``"scripts"`` e vamos definir o nosso primeiro script. Esses mesmos são formas de executar comandos do terminal que façam mais de uma coisa.
 
 **Como vai ficar a nova propriedade:**
 
-``` json
-"scripts": {
-    "dev": "babel ./main.js -o ./bundle.js -w"
-}   
-```
+<h2 align="center">
+    <img 
+        src="./.github/yarn-dev.png" 
+        width="500"
+    >
+</h2>
 
 O script ``"dev"`` vai executar o Babel pegando o arquivo **main.js** e enviando convertido para outro arquivo chamando **bundle.js**
 
@@ -148,7 +148,6 @@ Antigamente não era possível usar classes em JavaScript, hoje você pode usar 
 <h2 align="center">
     <img 
         src="./.github/class.png" 
-        alt="classes"
         width="500"
     >
 </h2>
@@ -168,7 +167,6 @@ E por último estamos pegando um botão de nosso HTML e adicionando uma função
 <h2 align="center">
     <img 
         src="./.github/class-extends.png" 
-        alt="classes"
         width="500"
     >
 </h2>
@@ -184,7 +182,6 @@ Nós teremos o mesmo funcionamento de antes, a diferença é que estamos herdend
 <h2 align="center">
     <img 
         src="./.github/class-super.png" 
-        alt="classes"
         width="500"
     >
 </h2>
@@ -198,7 +195,6 @@ Com os métodos estáticos, nós não precisamos usar o ``new`` para chamar algu
 <h2 align="center">
     <img 
         src="./.github/class-static-error.png" 
-        alt="classes"
         width="500"
     >
 </h2>
@@ -210,7 +206,6 @@ Normalmente usamos este tipo de método para passar uma informação e ele retor
 <h2 align="center">
     <img 
         src="./.github/class-static.png" 
-        alt="classes"
         width="500"
     >
 </h2>
@@ -218,3 +213,41 @@ Normalmente usamos este tipo de método para passar uma informação e ele retor
 No código acima criamos uma classe chamada ``Math`` com o método ``sum`` que basicamente pega dois valores e retorna a soma.
 
 Após isso chamamos o método passando os dois valores e ele nos retorna a soma. Você pode reparar que não precisamos instanciar nenhum objeto pois o método é estático.
+
+<h2 align="center">🚀 Const & Let</h2>
+
+Se você programa o JavaScript básico, provavelmente conhece a palavra-chave ``var`` para declarar variáveis. Porém a partir do ES6 nós temos outras duas formas de declarar uma variável, usando a palavra ``let`` ou ``const``
+
+<h2 align="center">
+    <img 
+        src="./.github/const.png" 
+        width="300"
+    >
+</h2>
+
+### Const
+
+``const`` é uma constante, e não pode ter seu valor reatribuído, no exemplo acima o código retornaria um erro, pois estamos tentando reatribuir um novo valor.
+
+
+<h2 align="center">
+    <img 
+        src="./.github/const-m.png" 
+        width="500"
+    >
+</h2>
+
+### Let
+
+``let`` é uma variável de escopo.
+
+<h2 align="center">
+    <img 
+        src="./.github/let.png" 
+        width="500"
+    >
+</h2>
+
+No código acima, temos um exemplo de uso deste tipo de variável. Podemos perceber que diferente da ``const`` ela pode ter seu valor reatribuído.
+
+Como dito ``let`` é uma variável de escopo, a cada abertura e fechamento de chaves consideramos um escopo. Ou seja como a variável ``y`` está dentro do escopo da função, se tentarmos dar um ``console.log(y)`` fora da função, nós **não vamos conseguir acessar o valor**.
