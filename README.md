@@ -27,7 +27,7 @@ ECMAScript é o responsável por formular as novas regras e funcionalidades da l
 
 Para quem já programava em JavaScript antes do ES6 e depois, percebe que são duas linguagens completamente diferentes, você usa a mesma sintaxe, porém existem muitas funcionalidades novas que vieram com o pacote ES6.
 
-### Babel 
+### [Babel](https://babeljs.io/) 
 
 O JavaScript avança muito rápido, já os navegadores são um pouco lentos para acompanhar está evolução. Então os navegadores podem não entender algumas funcionalidades do ES6, ES7, ES8. O Babel basicamente pega o código que você escreveu com as novas funcionalidades da linguagem e transpila (converte) para um código que todos navegadores entendam. 
 
@@ -139,7 +139,11 @@ yarn dev
 
 E finalmente, você irá reparar o novo arquivo **bundle.js**, seu conteúdo será o código do **main.js** convertido para versões mais antigas do JavaScript.
 
-<h2 align="center">🚀 Classes</h2>
+<h2 align="center">
+    <a 
+        href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Classes"
+    >🚀 Classes </a>
+</h2>
 
 Antigamente não era possível usar classes em JavaScript, hoje você pode usar tranquilamente.
 
@@ -225,7 +229,7 @@ Se você programa o JavaScript básico, provavelmente conhece a palavra-chave ``
     >
 </h2>
 
-### Const
+### [Const](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/const)
 
 ``const`` é uma constante, e não pode ter seu valor reatribuído, no exemplo acima o código retornaria um erro, pois estamos tentando reatribuir um novo valor.
 
@@ -237,7 +241,7 @@ Se você programa o JavaScript básico, provavelmente conhece a palavra-chave ``
     >
 </h2>
 
-### Let
+### [Let](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/let)
 
 ``let`` é uma variável de escopo.
 
@@ -258,7 +262,7 @@ Antigamente se você quisesse manipular vetores ou realizar ações em cada item
 
 Com o ES6 temos várias novas funcionalidades para manipulação de vetores, vamos ver algumas abaixo:
 
-### Map
+### [Map](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/map)
 
 A função do ``map`` é percorrer um vetor e executar uma ação escolhida em cada item.
 
@@ -275,7 +279,7 @@ O ``map`` é uma função que recebe como parâmetro outra função e nesta mesm
 
 **O resultado seria:** ``[1, 4, 6, 8, 12, 14]``
 
-### Reduce
+### [Reduce](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
 
 O ``reduce`` é uma forma de nós consumirmos todo nosso vetor e transformar em uma única informação.
 
@@ -294,7 +298,7 @@ Na primeira vez que a função for executada o ``total`` vai ser 0 e ``next`` va
 
 **O resultado seria:** ``30``
 
-### Filter
+### [Filter](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filtro)
 
 O ``filter`` serve basicamente para filtrar itens de um vetor.
 
@@ -309,7 +313,7 @@ No código acima estamos pegando todos números pares do vetor.
 
 Para cada item estamos verificando se o resto da sua divisão por 2 é igual a 0, ou seja, se ele é par. Essa condição tem que retornar ``true`` ou ``false``, se o resultado for ``true`` este item será incluído no novo vetor.
 
-### Find
+### [Find](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
 
 O ``find`` é utilizado quando desejamos verificar se existe uma informação dentro do vetor.
 
