@@ -329,7 +329,11 @@ No código acima estamos verificando se existe o número 9 dentro do vetor.
 Se o ``find`` conseguir encontrar o número, ele vai retornar exatamente o número, caso contrário ele vai retornar **undefined**.
 
 
-<h2 align="center">🚀 Arrow Functions</h2>
+<h2 align="center">
+    <a 
+        href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/Arrow_functions"
+    > 🚀 Arrow Functions </a>
+</h2>
 
 É uma nova forma de criar funções. Esta nova forma tem uma estrutura reduzida quando comparada a sintaxe de uma função comum.
 
@@ -354,7 +358,7 @@ O melhor lugar para usar uma ``arrow function`` é em funções anônimas. **Vej
     >
 </h2>
 
-Quando a função recebe apenas um parâmetro, nós podemos remover os parênteses que envolvem o parâmetro.
+Quando a função recebe apenas um parâmetro, nós podemos remover os parênteses que envolvem o parâmetro. Veja no exemplo acima.
 
 <h2 align="center">
     <img 
