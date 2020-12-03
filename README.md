@@ -49,7 +49,7 @@
 - [🚀 Arrow Functions](#-arrow-functions)
 - [🚀 Valores padrão](#-valores-padrão)
 - [🚀 Desestruturação](#-desestruturação)
-- [📜 License](#-license)
+- [📜 Licença](#-licença)
 
 ---
 
@@ -502,7 +502,7 @@ A desestruturação pode ser usada em vários outros locais, no exemplo acima es
 
 Neste caso temos uma função que mostra o nome do usuário, quando chamamos esta função estamos passando o objeto ``user`` inteiro. Então podemos desestruturar o nome do usuário no próprio parâmetro da função. O código vai executar sem problemas.
 
-## 📜 License
-Released in 2020. This project is under the [MIT license](./LICENSE).
+## 📜 Licença
+Realizado em 2020. Esse projeto está sob a [licença MIT](./LICENSE).
 
-Made with love by [Leonardo Campello](https://br.linkedin.com/in/leonardo-campello-6151a71a5) 💚
+Feito com 💚 por [Leonardo Campello](https://br.linkedin.com/in/leonardo-campello-6151a71a5)
