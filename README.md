@@ -53,6 +53,7 @@
   - [Rest](#rest)
   - [Spread](#spread)
 - [🚀 Template Literals](#-template-literals)
+- [🚀 Object Short Syntax](#-object-short-syntax)
 - [📜 Licença](#-licença)
 
 ---
@@ -540,7 +541,7 @@ O **rest** serve para pegar o resto das propriedades. O que seria esse resto? Va
 
 No código acima temos um objeto de usuário, suas propriedades são nome, idade e trabalho.
 
-Usando o conceito de desestruturação estamos pegando o nome do usuário. O restante das informações do usuário serão armazenados em outra variável, aí que entra o operador **rest**, usando três pontos e o nome da variável que desejamos armazenar as informações já conseguimos solucionar esta tarefa.
+Usando o conceito de desestruturação estamos pegando o nome do usuário. O restante das informações do usuário serão armazenadas em outra variável, aí que entra o operador **rest**, usando três pontos e o nome da variável que desejamos armazenar as informações já conseguimos solucionar esta tarefa.
 
 O primeiro ``console.log()`` retorna o nome do usuário e o segundo um objeto com as informações restantes.
 
@@ -629,6 +630,30 @@ Agora vamos ver um exemplo utilizando template literals.
 É muito simples de utilizar, no lugar das aspas simples ou duplas nós vamos utilizar o sinal de crase e quando quisermos incluir uma variável, primeiro vamos incluir o sinal de dólar e depois vamos abrir e fechar chaves, basta incluir o nome da variável entre as chaves.
 
 Você pode ver que o código ficou muito mais limpo e vai funcionar da mesma forma.
+
+## 🚀 Object Short Syntax
+
+Agora vamos ver um pouco sobre **object short syntax** ou **sintaxe curta de objeto**.
+
+<h2 align="center">
+    <img 
+        src="./.github/object-syntax.png" 
+        width="500"
+    >
+</h2>
+
+Vamos supor um caso que você precisa repassar as variáveis nome e idade para um objeto de usuário.
+
+Veja que no objeto colocamos os nomes das propriedades repetindo o nome das variáveis, com ES6 podemos fazer de uma forma diferente.
+
+<h2 align="center">
+    <img 
+        src="./.github/object-short-syntax.png" 
+        width="500"
+    >
+</h2>
+
+Quando o nome da propriedade é igual o nome da variável dentro de um objeto, nós podemos deixar apenas um deles, como no exemplo acima.
 
 ## 📜 Licença
 Realizado em 2020. Esse projeto está sob a [licença MIT](./LICENSE).
