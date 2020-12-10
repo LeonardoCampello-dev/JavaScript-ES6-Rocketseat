@@ -1,3 +1,3 @@
-import { sum } from './functions'
+import * as mathFunctions from './functions'
 
-console.log(sum(1, 3))
+console.log(mathFunctions.sum(3, 1))

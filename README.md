@@ -55,6 +55,9 @@
 - [🚀 Template Literals](#-template-literals)
 - [🚀 Object Short Syntax](#-object-short-syntax)
 - [🚀 Configurando Webpack](#-configurando-webpack)
+- [🚀 Import/Export](#-importexport)
+  - [Export default](#export-default)
+- [Import all](#import-all)
 - [📜 Licença](#-licença)
 
 ---
@@ -739,10 +742,91 @@ Não se preocupe com a sintaxe ``import && export``, estamos usando apenas para 
 
 Se no seu console retornou o resultado, significa que já conseguimos importar e exportar arquivos, graças ao webpack.
 
+## 🚀 [Import/Export](https://javascript.info/import-export)
+
+Agora vamos falar sobre a sintaxe de importação e exportação de arquivos .js
+
+Nós podemos usar a palavra-chave ``export`` para exportar funções, variáveis, classes ou qualquer outra informação dentro do nosso JavaScript. Para importar uma informação usamos outra palavra-chave chamada ``import``.
+
+<h2 align="center">
+    <img 
+        src="./.github/export-one.png" 
+        width="500"
+    >
+</h2>
 
 
+<h2 align="center">
+    <img 
+        src="./.github/import-one.png" 
+        width="500"
+    >
+</h2>
+
+No código acima exportamos uma nova função do arquivo functions.js, nós podemos exportar quantas funções quisermos. 
+
+Para importar as funções, nós colocamos a palavra-chave ``import`` depois abrimos chaves e dentro delas colocamos quais funções estamos importando. Usamos o ``from`` para dizer de qual arquivo estamos importando, não precisamos colocar o .js no final do nome do arquivo, por padrão ele busca um arquivo JavaScript.
 
 
+### Export default
+
+<h2 align="center">
+    <img 
+        src="./.github/export-default.png" 
+        width="500"
+    >
+</h2>
+
+<h2 align="center">
+    <img 
+        src="./.github/import-default.png" 
+        width="500"
+    >
+</h2>
+
+Cada arquivo pode ter um ``export default``, esse é o export padrão de quando importamos algum arquivo. Essa forma é muito utilizada por exemplo no **ReactJS** e outras bibliotecas front end, geralmente nessas tecnologias usamos uma classe ou função por arquivo.
+
+Quando importamos uma função de um arquivo com ``export default``, nós não precisamos utilizar as chaves e ainda podemos nomear a função da forma que quisermos. Se você quisesse chamar a função de ``sumFunction`` não teria problema nenhum.
+
+Para renomar funções que usam a sintaxe comum de export é um pouco diferente, **veja abaixo como fazer:**
+
+<h2 align="center">
+    <img 
+        src="./.github/import-as.png" 
+        width="550"
+    >
+</h2>
+
+É muito simples de fazer, basta inserir o nome original da função, em seguida a palavra-chave ``as`` e por fim o novo nome da função.
+
+Outra coisa importante para saber é que podemos ter no mesmo arquivo um export default e outros vários exports comuns, **veja abaixo como fica:**
+
+<h2 align="center">
+    <img 
+        src="./.github/export-and-default.png" 
+        width="500"
+    >
+</h2>
+
+<h2 align="center">
+    <img 
+        src="./.github/import-and-default.png" 
+        width="500"
+    >
+</h2>
+
+## Import all
+
+Agora vamos supor que um arquivo tenha vários exports, seria trabalhoso importar cada função em uma variável, então nós podemos armazenar todas funções em um único objeto, **veja como fazer:**
+
+<h2 align="center">
+    <img 
+        src="./.github/import-all.png" 
+        width="500"
+    >
+</h2>
+
+Basicamente você irá inserir um ``*`` que significa todas funções do arquivo e depois nomear o objeto onde vai armazenar elas.
 
 ## 📜 Licença
 Realizado em 2020. Esse projeto está sob a [licença MIT](./LICENSE).
