@@ -1,6 +1,10 @@
-import userClass, { age as userAge } from '../exercises/module-02/functions'
+const myPromise = () => new Promise((resolve, reject) => {
+    setTimeout(() => { resolve('OK') }, 2000)
+})
 
-userClass.info()
+const executePromise = async () => {
+    console.log(await myPromise())
+    console.log(await myPromise())
+}
 
-console.info(userAge)
-
+executePromise()
