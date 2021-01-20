@@ -1,6 +1,5 @@
-import userClass, { age as userAge } from './functions'
+import userClass, { age as userAge } from "./functions";
 
-userClass.info()
+userClass.info();
 
-console.info(userAge)
-
+console.info(userAge);

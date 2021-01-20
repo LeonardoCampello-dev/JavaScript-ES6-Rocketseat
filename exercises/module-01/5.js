@@ -1,44 +1,44 @@
-// 5.1 
+// 5.1
 
-const arr = [1, 2, 3, 4, 5, 6]
+const arr = [1, 2, 3, 4, 5, 6];
 
-const [x, ...y] = arr
+const [x, ...y] = arr;
 
-console.log(`x: ${x} y: ${y.join(' - ')}`)
+console.log(`x: ${x} y: ${y.join(" - ")}`);
 
-console.log('==========================================================')
+console.log("==========================================================");
 
-const sum = (...params) => params.reduce((total, next) => total + next)
+const sum = (...params) => params.reduce((total, next) => total + next);
 
-console.log(`Sum: ${sum(1, 2, 3, 4, 5, 6)}`)
+console.log(`Sum: ${sum(1, 2, 3, 4, 5, 6)}`);
 
-console.log('==========================================================')
+console.log("==========================================================");
 
 // 5.2
 
 const user = {
-    name: 'Leonardo',
-    age: 20,
-    address: {
-        city: 'Novo Hamburgo',
-        state: 'RS',
-        country: 'Brazil'
-    }
-}
+  name: "Leonardo",
+  age: 20,
+  address: {
+    city: "Novo Hamburgo",
+    state: "RS",
+    country: "Brazil",
+  },
+};
 
 const userTwo = {
-    ...user,
-    name: 'Gabriel'
-}
+  ...user,
+  name: "Gabriel",
+};
 
-console.log(userTwo)
+console.log(userTwo);
 
 const userThree = {
-    ...user,
-    address: {
-        ...user.address,
-        city: 'Lontras'
-    }
-}
+  ...user,
+  address: {
+    ...user.address,
+    city: "Lontras",
+  },
+};
 
-console.log(userThree)
+console.log(userThree);

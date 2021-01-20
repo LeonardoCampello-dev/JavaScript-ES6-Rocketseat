@@ -1,1 +1,4 @@
-(()=>{"use strict";alert("Hi")})();
+(() => {
+  "use strict";
+  alert("Hi");
+})();

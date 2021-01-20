@@ -1,10 +1,10 @@
-const name = 'Leonardo'
-const age = 20
+const name = "Leonardo";
+const age = 20;
 
 const user = {
-    name, 
-    age,
-    city: 'Novo Hamburgo'
-}
+  name,
+  age,
+  city: "Novo Hamburgo",
+};
 
-console.log(user)
+console.log(user);
